@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudyBuddy – AI Study Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>📚 StudyBuddy</h1><p>Your AI tutor for explaining, summarising and quizzing.</p></header>
+<main>
+  <nav id="tabs">
+    <button data-tab="explain" class="active">Explain</button>
+    <button data-tab="summarize">Summarise</button>
+    <button data-tab="quiz">Quiz</button>
+  </nav>
+  <section class="card">
+    <label id="label" for="input">Enter a topic</label>
+    <textarea id="input" rows="5" maxlength="4000" placeholder="e.g. Binary search trees"></textarea>
+    <div class="row">
+      <select id="level"><option>beginner</option><option>intermediate</option><option>advanced</option></select>
+      <button id="go">Explain</button>
+    </div>
+    <div id="out" class="out" aria-live="polite"></div>
+  </section>
+
+  <section class="card">
+    <h2>💬 Ask StudyBuddy</h2>
+    <div id="chat" class="chat"></div>
+    <div class="row">
+      <input id="msg" maxlength="1000" placeholder="Ask a study question…">
+      <button id="send">Send</button>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

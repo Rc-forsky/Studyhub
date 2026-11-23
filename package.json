@@ -1,0 +1,7 @@
+{
+  "name": "studybuddy",
+  "version": "1.0.0",
+  "description": "AI-powered study assistant with chatbot",
+  "scripts": { "dev": "vercel dev" },
+  "devDependencies": { "vercel": "^39.0.0" }
+}
